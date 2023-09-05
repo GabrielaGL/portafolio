@@ -90,14 +90,15 @@
         width: 150px
 
 .footer
-    @include flex-center
+    display: grid
     margin-left: -8px
     margin-right: -8px
     margin-bottom: -8px
-    height: 340px
+    height: 363px
     background-color: #C3D944
     .cntainer-footer
-        display: flex
+        @include flex-center
+        justify-self: center
         width: 950px
         header
             font-family: $font-tittle
@@ -105,7 +106,6 @@
             width: 500px
             letter-spacing: 3px
             line-height: 70px
-            margin-left: 20px
             img
                 width: 142px
                 margin-bottom: -134px
@@ -125,3 +125,8 @@
                 margin-top: 30px
                 button
                     @include btns-footer
+    #lynd
+        font-family: $font-content
+        text-align: center
+        font-size: 10px
+        margin-top: 35px
