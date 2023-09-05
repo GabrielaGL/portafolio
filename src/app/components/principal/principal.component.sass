@@ -59,11 +59,14 @@
 
 .cntainer
     display: grid
+    margin-bottom: 137px
+    height: 1377px
     .container-skills
         display: grid
         justify-self: center
         width: 1030px
         height: 800px
+        margin-top: -204px
 
 .tech
     margin-top: 70px
@@ -76,7 +79,7 @@
     h1
         font-family: $font-tittle
         font-size: 55px
-        margin-top: -128px
+        margin-top: -233px
         text-align: center
         margin-right: 20px
 
@@ -85,3 +88,40 @@
     justify-content: space-around
     img
         width: 150px
+
+.footer
+    @include flex-center
+    margin-left: -8px
+    margin-right: -8px
+    margin-bottom: -8px
+    height: 340px
+    background-color: #C3D944
+    .cntainer-footer
+        display: flex
+        width: 950px
+        header
+            font-family: $font-tittle
+            font-size: 30px
+            width: 500px
+            letter-spacing: 3px
+            line-height: 70px
+            margin-left: 20px
+            img
+                width: 142px
+                margin-bottom: -134px
+                margin-left: 222px
+        .vertical-line
+            width: 3px
+            background-color: black
+            height: 190px
+            margin-top: 95px
+            margin-right: 20px
+        article
+            font-family: $font-content
+            margin-top: 101px
+            margin-left: 47px
+            line-height: 10px
+            .cntainer-btns
+                margin-top: 30px
+                button
+                    @include btns-footer
